@@ -13,11 +13,8 @@ const services = [
 
 export default function PopularServices() {
   return (
-    <motion.section
-      {...fadeUp}
-      transition={{ ...fadeUp.transition, delay: 0.25 }}
-      className="mb-8"
-    >
+   <motion.div variants={fadeUp} initial="initial" animate="animate">
+
       <h2 className="text-lg font-semibold text-stone-800 mb-4">
         Популярные услуги
       </h2>

@@ -24,11 +24,8 @@ const categories = [
 
 export default function CategoryTabs() {
   return (
-    <motion.div
-      {...fadeUp}
-      transition={{ ...fadeUp.transition, delay: 0.1 }}
-      className="mb-6"
-    >
+  <motion.div variants={fadeUp} initial="initial" animate="animate">
+
       <div className="flex gap-3 overflow-x-auto no-scrollbar">
         {categories.map((cat) => {
           const Icon = cat.icon;
