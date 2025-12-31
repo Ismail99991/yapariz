@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useRequestModal } from "@/lib/useRequestModal";
+import Image from "next/image";
 import {
   Home,
   Heart,
@@ -51,7 +52,13 @@ export default function BottomNav() {
             active:shadow-[0_6px_20px_rgba(16,185,129,0.45)]
           "
         >
-          <HardHat className="w-6 h-6" />
+          <Image
+          src="/icons/helmet.svg"
+          alt="Request master"
+          width={28}
+          height={28}
+          className="invert brightness-0"
+           />
         </motion.button>
 
         <NavItem icon={Wallet} label={t("bottom_nav.balance")} />
