@@ -19,7 +19,7 @@ export default function AddressCard() {
         whileTap={{ scale: 0.97 }}
         className="
           w-full
-          flex items-center gap-4
+          flex items-center gap-3
           p-4
           bg-white
           rounded-2xl

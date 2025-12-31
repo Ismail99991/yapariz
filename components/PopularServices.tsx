@@ -20,13 +20,13 @@ export default function PopularServices() {
       variants={fadeUp}
       initial="initial"
       animate="animate"
-      className="mb-8"
+      className="mb-6"
     >
-      <h2 className="text-lg font-semibold text-stone-800 mb-4">
+      <h2 className="text-lg font-semibold text-stone-800 mb-3">
         {t("popular_services")}
       </h2>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-3">
         {services.map((s) => (
           <motion.button
             key={s.key}
