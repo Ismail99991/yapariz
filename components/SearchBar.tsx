@@ -6,7 +6,11 @@ import { fadeUp } from "@/lib/motion";
 
 export default function SearchBar() {
   return (
-  <motion.div variants={fadeUp} initial="initial" animate="animate">
+  <motion.div variants={fadeUp} 
+  initial="initial" 
+  animate="animate"
+  className="flex gap-3 mb-6"
+  >
 
       {/* Search */}
       <div className="flex items-center gap-2 flex-1 bg-white rounded-2xl px-4 py-3 shadow-sm">

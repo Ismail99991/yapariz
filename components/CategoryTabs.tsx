@@ -24,7 +24,11 @@ const categories = [
 
 export default function CategoryTabs() {
   return (
-  <motion.div variants={fadeUp} initial="initial" animate="animate">
+  <motion.div variants={fadeUp} 
+  initial="initial" 
+  animate="animate"
+  className="mb-6"
+  >
 
       <div className="flex gap-3 overflow-x-auto no-scrollbar">
         {categories.map((cat) => {

@@ -27,7 +27,11 @@ const banners = [
 
 export default function BannerCarousel() {
   return (
-    <motion.div variants={fadeUp} initial="initial" animate="animate">
+    <motion.div variants={fadeUp} 
+    initial="initial" 
+    animate="animate"
+    className="mb-8"
+    >
 
       <div className="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory">
         {banners.map((banner) => (
