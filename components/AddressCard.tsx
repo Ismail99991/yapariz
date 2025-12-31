@@ -2,13 +2,17 @@
 
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { fadeUp } from "@/lib/motion";
 
 export default function AddressCard() {
+  const { t } = useTranslation();
+
   return (
     <motion.div
-      {...fadeUp}
-      transition={{ ...fadeUp.transition, delay: 0.2 }}
+      variants={fadeUp}
+      initial="initial"
+      animate="animate"
       className="mb-8"
     >
       <motion.button
@@ -29,10 +33,10 @@ export default function AddressCard() {
 
         <div className="flex-1">
           <h3 className="text-sm font-semibold text-stone-800">
-            Добавить адрес
+            {t("add_address")}
           </h3>
           <p className="text-xs text-stone-500 mt-1">
-            Чтобы показывать мастеров поблизости
+            {t("address_hint")}
           </p>
         </div>
       </motion.button>

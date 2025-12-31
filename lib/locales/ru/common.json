@@ -1,0 +1,64 @@
+{
+  "hello": "Привет",
+  "hello_name": "Привет, {{name}}",
+  "search_placeholder": "Поиск услуг",
+  "add_address": "Добавить адрес", 
+  "address_hint": "Чтобы показывать мастеров поблизости",
+  "popular_services": "Популярные услуги",
+
+  "categories": {
+    "installation": "Монтаж",
+    "electricity": "Электрика",
+    "plumbing": "Сантехника",
+    "furniture": "Мебель",
+    "pool": "Бассейн",
+    "construction": "Строительство",
+    "other": "Другое"
+  },
+
+  "services": {
+    "electricity": "Электрика",
+    "plumbing": "Сантехника",
+    "cleaning": "Клининг",
+    "furniture": "Мебель",
+    "installation": "Монтаж",
+    "pool": "Бассейн",
+    "construction": "Строительство"
+  },
+
+  "banners": {
+    "fix_socket": {
+      "title": "Починим розетку",
+      "subtitle": "Быстро, аккуратно и безопасно"
+    },
+    "change_sink": {
+      "title": "Поменяем раковину",
+      "subtitle": "Без шума и лишних забот"
+    },
+    "no_flood": {
+      "title": "Без потопов и стресса",
+      "subtitle": "Надёжные мастера рядом"
+    }
+  },
+
+  "modal": {
+    "title": "Вызвать специалиста",
+    "description": "Опишите задачу — мы подберём мастера",
+    "description_placeholder": "Например: течёт кран на кухне",
+    "submit": "Найти мастера"
+  },
+
+  "bottom_nav": {
+    "home": "Главная",
+    "favorites": "Избранное",
+    "request": "Вызов",
+    "balance": "Баланс",
+    "profile": "Профиль"
+  },
+
+  "language": {
+    "ru": "Русский",
+    "en": "Английский",
+    "tr": "Турецкий"
+  }
+}

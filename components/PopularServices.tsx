@@ -2,41 +2,45 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import { fadeUp } from "@/lib/motion";
 
 const services = [
-  { title: "Электрика", image: "/illustrations/services/electrician.svg" },
-  { title: "Сантехника", image: "/illustrations/services/plumber.svg" },
-  { title: "Клининг", image: "/illustrations/services/cleaning.svg" },
-  { title: "Мебель", image: "/illustrations/services/furniture.svg" },
+  { key: "electricity", image: "/illustrations/services/electrician.svg" },
+  { key: "plumbing", image: "/illustrations/services/plumber.svg" },
+  { key: "cleaning", image: "/illustrations/services/cleaning.svg" },
+  { key: "furniture", image: "/illustrations/services/furniture.svg" },
 ];
 
 export default function PopularServices() {
-  return (
-   <motion.div variants={fadeUp} 
-   initial="initial" 
-   animate="animate" 
-   className="mb-8"
-   >
+  const { t } = useTranslation();
 
+  return (
+    <motion.div
+      variants={fadeUp}
+      initial="initial"
+      animate="animate"
+      className="mb-8"
+    >
       <h2 className="text-lg font-semibold text-stone-800 mb-4">
-        Популярные услуги
+        {t("popular_services")}
       </h2>
 
       <div className="grid grid-cols-2 gap-4">
         {services.map((s) => (
           <motion.button
-            key={s.title}
+            key={s.key}
             whileTap={{ scale: 0.97 }}
             className="bg-white rounded-2xl p-4 shadow-sm text-left"
           >
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium text-stone-700">
-                {s.title}
+                {t(`services.${s.key}`)}
               </span>
+
               <Image
                 src={s.image}
-                alt={s.title}
+                alt={t(`services.${s.key}`)}
                 width={56}
                 height={56}
                 className="opacity-90"

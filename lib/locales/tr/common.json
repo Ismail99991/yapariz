@@ -1,0 +1,64 @@
+{
+  "hello": "Merhaba",
+  "hello_name": "Merhaba, {{name}}",
+  "search_placeholder": "Hizmet ara",
+  "add_address": "Adres ekle",
+  "address_hint": "Yakındaki ustaları göstermek için",
+  "popular_services": "Popüler hizmetler",
+
+  "categories": {
+    "installation": "Montaj",
+    "electricity": "Elektrik",
+    "plumbing": "Tesisat",
+    "furniture": "Mobilya",
+    "pool": "Havuz",
+    "construction": "İnşaat",
+    "other": "Diğer"
+  },
+
+  "services": {
+    "electricity": "Elektrik",
+    "plumbing": "Tesisat",
+    "cleaning": "Temizlik",
+    "furniture": "Mobilya",
+    "installation": "Montaj",
+    "pool": "Havuz",
+    "construction": "İnşaat"
+  },
+
+  "banners": {
+    "fix_socket": {
+      "title": "Prizi tamir edelim",
+      "subtitle": "Hızlı, temiz ve güvenli"
+    },
+    "change_sink": {
+      "title": "Lavabo değişimi",
+      "subtitle": "Gürültüsüz ve zahmetsiz"
+    },
+    "no_flood": {
+      "title": "Su baskını yok",
+      "subtitle": "Yakınınızda güvenilir ustalar"
+    }
+  },
+
+  "modal": {
+    "title": "Usta çağır",
+    "description": "Sorunu açıklayın — size usta bulalım",
+    "description_placeholder": "Örneğin: mutfak musluğu akıtıyor",
+    "submit": "Usta bul"
+  },
+
+  "bottom_nav": {
+    "home": "Ana Sayfa",
+    "favorites": "Favoriler",
+    "request": "Çağrı",
+    "balance": "Bakiye",
+    "profile": "Profil"
+  },
+
+  "language": {
+    "ru": "Rusça",
+    "en": "İngilizce",
+    "tr": "Türkçe"
+  }
+}

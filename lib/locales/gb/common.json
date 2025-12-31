@@ -1,0 +1,64 @@
+{
+  "hello": "Hello",
+  "hello_name": "Hello, {{name}}",
+  "search_placeholder": "Search services",
+  "add_address": "Add address",
+  "address_hint": "To show nearby specialists",
+  "popular_services": "Popular services",
+
+  "categories": {
+    "installation": "Installation",
+    "electricity": "Electricity",
+    "plumbing": "Plumbing",
+    "furniture": "Furniture",
+    "pool": "Pool",
+    "construction": "Construction",
+    "other": "Other"
+  },
+
+  "services": {
+    "electricity": "Electricity",
+    "plumbing": "Plumbing",
+    "cleaning": "Cleaning",
+    "furniture": "Furniture",
+    "installation": "Installation",
+    "pool": "Pool",
+    "construction": "Construction"
+  },
+
+  "banners": {
+    "fix_socket": {
+      "title": "Fix a socket",
+      "subtitle": "Fast, careful and safe"
+    },
+    "change_sink": {
+      "title": "Replace a sink",
+      "subtitle": "No noise, no worries"
+    },
+    "no_flood": {
+      "title": "No floods, no stress",
+      "subtitle": "Reliable specialists nearby"
+    }
+  },
+
+  "modal": {
+    "title": "Request a specialist",
+    "description": "Describe the task — we will find a specialist",
+    "description_placeholder": "For example: kitchen sink is leaking",
+    "submit": "Find a specialist"
+  },
+
+  "bottom_nav": {
+    "home": "Home",
+    "favorites": "Favorites",
+    "request": "Request",
+    "balance": "Balance",
+    "profile": "Profile"
+  },
+
+  "language": {
+    "ru": "Russian",
+    "en": "English",
+    "tr": "Turkish"
+  }
+}

@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { Search, SlidersHorizontal } from "lucide-react";
 import { fadeUp } from "@/lib/motion";
+import i18n from "@/lib/i18n";
 
 export default function SearchBar() {
+  const { t } = i18n;
   return (
   <motion.div variants={fadeUp} 
   initial="initial" 
@@ -16,7 +18,7 @@ export default function SearchBar() {
       <div className="flex items-center gap-2 flex-1 bg-white rounded-2xl px-4 py-3 shadow-sm">
         <Search className="w-5 h-5 text-stone-400" />
         <input
-          placeholder="Что нужно починить?"
+          placeholder={t("search_placeholder")}
           className="flex-1 outline-none text-sm text-stone-700 placeholder:text-stone-400"
         />
       </div>

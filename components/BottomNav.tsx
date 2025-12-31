@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { useRequestModal } from "@/lib/useRequestModal";
 import {
   Home,
@@ -11,13 +12,14 @@ import {
 } from "lucide-react";
 
 export default function BottomNav() {
-    const { open, setOpen } = useRequestModal();
+  const { t } = useTranslation();
+  const { setOpen } = useRequestModal();
 
   return (
     <motion.nav
-      initial={{ y: 80 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
+      initial={{ y: 80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3 }}
       className="
         fixed bottom-4 left-1/2 -translate-x-1/2
         w-[calc(100%-2rem)]
@@ -30,36 +32,30 @@ export default function BottomNav() {
       "
     >
       <div className="flex items-center justify-between">
-        {/* Home */}
-        <NavItem icon={Home} label="Главная" />
-
-        {/* Favorites */}
-        <NavItem icon={Heart} label="Избранное" />
+        <NavItem icon={Home} label={t("bottom_nav.home")} />
+        <NavItem icon={Heart} label={t("bottom_nav.favorites")} />
 
         {/* Center CTA */}
         <motion.button
-        onClick={() => setOpen(true)}
+          onClick={() => setOpen(true)}
           whileTap={{ scale: 0.9 }}
           className="
-         -mt-6
-         translate-y-2
-         w-14 h-14
-         rounded-full
-         bg-emerald-500
-         flex items-center justify-center
-         text-white
-         shadow-[0_10px_30px_rgba(16,185,129,0.35)]
-         active:shadow-[0_6px_20px_rgba(16,185,129,0.45)]
+            -mt-6
+            translate-y-2
+            w-14 h-14
+            rounded-full
+            bg-emerald-500
+            flex items-center justify-center
+            text-white
+            shadow-[0_10px_30px_rgba(16,185,129,0.35)]
+            active:shadow-[0_6px_20px_rgba(16,185,129,0.45)]
           "
         >
           <HardHat className="w-6 h-6" />
         </motion.button>
 
-        {/* Balance */}
-        <NavItem icon={Wallet} label="Баланс" />
-
-        {/* Profile */}
-        <NavItem icon={User} label="Профиль" />
+        <NavItem icon={Wallet} label={t("bottom_nav.balance")} />
+        <NavItem icon={User} label={t("bottom_nav.profile")} />
       </div>
     </motion.nav>
   );
@@ -69,7 +65,7 @@ function NavItem({
   icon: Icon,
   label,
 }: {
-  icon: any;
+  icon: React.ElementType;
   label: string;
 }) {
   return (

@@ -2,9 +2,11 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useRequestModal } from "@/lib/useRequestModal";
+import { useTranslation } from "react-i18next";
 
 export default function RequestModal() {
   const { open, setOpen } = useRequestModal();
+  const { t } = useTranslation();
 
   return (
     <AnimatePresence>
@@ -28,19 +30,20 @@ export default function RequestModal() {
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
             <h3 className="text-lg font-semibold text-stone-800 mb-2">
-              Вызвать специалиста
+              {t("modal.title")}
             </h3>
+
             <p className="text-sm text-stone-500 mb-6">
-              Опишите задачу — мы подберём мастера
+              {t("modal.description")}
             </p>
 
             <textarea
-              placeholder="Например: течёт кран на кухне"
+              placeholder={t("modal.description_placeholder")}
               className="w-full h-24 border border-stone-200 rounded-xl p-3 text-sm outline-none mb-4"
             />
 
             <button className="w-full py-3 rounded-xl bg-emerald-500 text-white font-medium">
-              Найти мастера
+              {t("modal.submit")}
             </button>
           </motion.div>
         </>
