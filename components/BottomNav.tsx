@@ -52,8 +52,8 @@ export default function BottomNav() {
             <Image
               src="/icons/helmet.svg"
               alt="Request specialist"
-              width={32}
-              height={32}
+              width={45}
+              height={45}
               className="text-white drop-shadow-sm"
             />
           </motion.button>
