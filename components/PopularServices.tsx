@@ -41,6 +41,6 @@ export default function PopularServices() {
           </motion.button>
         ))}
       </div>
-    </motion.section>
+    </motion.div>
   );
 }
